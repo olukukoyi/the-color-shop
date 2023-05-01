@@ -17,6 +17,7 @@ export default async function handler(req, res) {
         success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${req.headers.origin}`, // or `${req.headers.origin}/cart`
       });
+      res.status(200).json(session);
     } catch (err) {
       res.status(500).json({ statusCode: 500, messgage: err.message });
     }

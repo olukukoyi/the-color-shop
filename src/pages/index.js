@@ -60,7 +60,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <button className=" w-[75%] bg-green-500 rounded-2xl aboslute mb-20 p-4 top-0 ">
+        <button
+          onClick={() => redirectToCheckout()}
+          className=" w-[75%] bg-green-500 rounded-2xl aboslute mb-20 p-4 top-0 "
+        >
           CHECK OUT
         </button>
       </div>
