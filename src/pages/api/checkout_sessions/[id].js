@@ -1,4 +1,4 @@
-import Stripe from "stirpe";
+import Stripe from "stripe";
 
 // endpoint to retrieve checkout session using an id
 
